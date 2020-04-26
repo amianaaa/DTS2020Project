@@ -31,6 +31,9 @@
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+  .header-active .header-right a{
+   color: #fff !important;
+  }
   .team-item {
     width: 100%;
   }
