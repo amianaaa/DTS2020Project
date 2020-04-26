@@ -109,7 +109,7 @@ header {
   margin-right: -25px;
 }
 .header-active .header-right a{
- color: #c0392b !important;
+ color: #c0392b;
 }
 .header-right a {
   line-height: 65px;
