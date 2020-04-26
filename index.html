@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-left animated infinite pulse slow">
+        <a href="">
+          <img class="logo" src="image/covid.png" style="height: 60px; width: auto;" class="animated infinite bounce">
+          </a>
+
+
+        </div>
+        
+        <!-- Tambahkan ikon menu disini -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="fa fa-bars fa-2x menu-icon"></span></a>
+        <div class="header-right" id="myLinks">
+          <a href="#">Data</a>
+          <a href="#">Call Center</a>
+          <a href="#" class="login">Log in</a>
+        </div>
+      </div>
+    </header>
+     <div class="top-wrapper">
+      <div class="container">
+        <h1 class="animated fadeIn infinite slower">PUSAT INFORMASI COVID 19</h1>
+        <!-- <h1>BELAJAR MENJADI LEBIH KREATIF.</h1> -->
+
+        <p>Pastikan berbagi informasi yang benar dengan keluarga, kerabat, rekan kerja dan lingkungan Anda. </p>
+        <p class="">Mulai beraksi sekarang!</p>
+      <!--   <div class="btn-wrapper">
+          <a href="#" class="btn signup">Daftar dengan Email</a>
+          <p>atau</p>
+          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
+          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>
+        </div> -->
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2 class="animated fadeIn slower">Ketahui bahwa situasi akan terus berkembang sehingga panduan masyarakat bisa berubah – karena itu, selalui ikuti versi terbaru.</h2>
+        </div>
+        <div class="lessons animated slideInLeft">
+          <div class="lesson">
+            <div class="lesson-icon ">
+              <img src="image/img1.jpg" style="height: 200px;">
+              <!--  <p>HTML & CSS</p> -->
+            </div>
+             <!-- <p class="text-contents">Bahasa yang digunakan untuk membuat dan mendesain tampilan situs web Anda. </p> -->
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/img2.jpg" style="height: 200px;">
+              <!-- <p>jQuery</p> -->
+            </div>
+            <!-- <p class="text-contents">Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p> -->
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/img3.jpg" style="height: 200px;">
+              <!-- <p>Ruby</p> -->
+            </div>
+            <!-- <p class="text-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p> -->
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/img4.jpg" style="height: 200px;">
+              <!-- <p>PHP</p> -->
+            </div>
+            <!-- <p class="text-contents">Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p> -->
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Dalam masa sulit ini, ingatlah setiap kita memiliki peran penting. Bersama-sama kita bisa melindungi diri dan melindungi sesama dan selamat dari wabah COVID-19. Kita bisa atasi wabah lebih cepat dengan aksi yang tepat.</h2>
+          <!-- <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif!</h3> -->
+        </div>
+       <a href="tel:119" class="btn message">Hubungi Call Center</a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="image/covid.png">
+        <p>PUSAT INFORMASI COVID 19 &copy Nurfazriah Attamami</p>
+      </div>
+    </footer>
+    <script>
+      $(window).on("scroll", function() {
+          if($(window).scrollTop() > 50) {
+              $(".header").addClass("header-active");
+          } else {
+              //remove the background property so it comes transparent again (defined in your css)
+             $(".header").removeClass("header-active");
+          }
+      })
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

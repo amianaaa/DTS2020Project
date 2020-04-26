@@ -1,0 +1,92 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .facebook {
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper {
+    text-align: left;
+  }
+  .menu-icon {
+  display: block !important;
+  /* Gantikan property display ke none */
+  
+}
+  
+  /* Tambahkan CSS untuk header-right */
+  
+  
+  /* Tambahkan CSS untuk menu-icon */
+  .header-right{
+    display: none;
+  }
+  .menu-icon{
+    display : block;
+  }
+  .header-right {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    float: none;
+  }
+  .header-right a {
+    line-height: 25px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    float: none;
+  }
+  .header-right a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-right a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
